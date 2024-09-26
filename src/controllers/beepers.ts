@@ -18,7 +18,7 @@ export const createNewBeeper = async (
   try {
     const beeper: Beeper = {
       id: Date.now(),
-      name: uuidv4(),
+      name: req.body.name,
       status: "manufactured",
       created_at: new Date(),
     };
